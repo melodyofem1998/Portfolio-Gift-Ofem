@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A practical safe browsing field guide by Gift Moses Ofem.">
+  <title>Safe Browsing Guide | Gift Moses Ofem</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <script src="safe-browsing.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><img class="brand-mark" src="assets/gift-moses-portrait.jpeg" alt=""><span>Gift Moses Ofem<small>Student portfolio</small></span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About</a><a aria-current="page" href="projects.html">Projects</a><a href="planner.html">Planner</a><a href="contact.html">Contact</a></nav>
+  </header>
+  <main class="wrap page-main browsing-page">
+    <a class="back-link" href="projects.html">← Back to projects</a>
+    <section class="page-intro">
+      <p class="eyebrow">PROJECT CONCEPT 06 · DIGITAL SAFETY</p>
+      <h1>Safe browsing <em>guide.</em></h1>
+      <p class="lead">A quick field guide for checking a web address and making more careful choices online.</p>
+    </section>
+    <section class="address-example">
+      <div><p class="eyebrow">FICTIONAL ADDRESS · NOT CLICKABLE</p><p class="sample-url"><span>https://</span>mybank.example.login-check.test/account</p></div>
+      <button id="address-clues-button" class="text-button" type="button" aria-expanded="false" aria-controls="address-clues">Show what to inspect <span aria-hidden="true">↗</span></button>
+      <div id="address-clues" class="address-clues" hidden><p>The registered-looking words at the beginning don’t prove who owns the site. Read the hostname from right to left: this example ends in <strong>login-check.test</strong>. It is fictional and uses the reserved <code>.test</code> domain.</p></div>
+    </section>
+    <section class="browsing-layout">
+      <div class="browsing-check-card">
+        <div class="browsing-head"><div><p class="eyebrow">BEFORE YOU CONTINUE</p><h2>Pause and check.</h2></div><span id="browsing-count" class="browsing-count">0 / 5</span></div>
+        <div class="browsing-progress" role="progressbar" aria-label="Safe browsing checklist progress" aria-valuemin="0" aria-valuemax="5" aria-valuenow="0"><span id="browsing-progress-fill"></span></div>
+        <p id="browsing-status" class="browsing-status" aria-live="polite">Mark any checks you’ve considered. Your choices stay only while this page is open.</p>
+        <div class="browsing-items">
+          <label><input type="checkbox"><span><strong>Read the full web address</strong><small>Watch for misspellings, extra words, or a domain that doesn’t match the organization.</small></span></label>
+          <label><input type="checkbox"><span><strong>Use a trusted route for sign-in</strong><small>Type a known address yourself or use an official app or saved bookmark.</small></span></label>
+          <label><input type="checkbox"><span><strong>Treat unexpected links with care</strong><small>Avoid signing in through surprise messages; contact the sender through a separate trusted channel.</small></span></label>
+          <label><input type="checkbox"><span><strong>Be careful with downloads</strong><small>Only download files you expected from a source you trust.</small></span></label>
+          <label><input type="checkbox"><span><strong>Remember what HTTPS does—and doesn’t do</strong><small>It encrypts a connection, but it does not prove that a website owner is honest.</small></span></label>
+        </div>
+        <button id="browsing-reset" class="clear-button" type="button">Clear all checks</button>
+      </div>
+      <aside class="browsing-aside"><p class="eyebrow">A USEFUL HABIT</p><h2>When in doubt, navigate independently.</h2><p>Close the unexpected message and open the organization’s official app or a saved address. Don’t use contact details supplied by a suspicious message.</p><div class="mini-tip"><span aria-hidden="true">✳</span><p>A padlock or HTTPS label is useful, but it is not a trust badge for the site itself.</p></div><a class="text-link" href="projects.html">Explore more cybersecurity projects ↗</a></aside>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-row"><span>© <span data-year></span> Gift Moses Ofem · MIVA Open University</span><span>Made with care while learning the web.</span></div></footer>
+</body>
+</html>

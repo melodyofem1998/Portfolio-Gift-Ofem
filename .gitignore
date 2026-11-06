@@ -1,0 +1,9 @@
+# Local image-editing and setup scratch folders
+/output/
+/outputs/
+/work/
+
+# Windows and editor noise
+Thumbs.db
+.DS_Store
+.vscode/

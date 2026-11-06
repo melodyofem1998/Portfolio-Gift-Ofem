@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A short cybersecurity awareness quiz by Gift Moses Ofem.">
+  <title>Cybersecurity Awareness Quiz | Gift Moses Ofem</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <script src="awareness-quiz.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><img class="brand-mark" src="assets/gift-moses-portrait.jpeg" alt=""><span>Gift Moses Ofem<small>Student portfolio</small></span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About</a><a aria-current="page" href="projects.html">Projects</a><a href="planner.html">Planner</a><a href="contact.html">Contact</a></nav>
+  </header>
+  <main class="wrap page-main quiz-page">
+    <a class="back-link" href="projects.html">← Back to projects</a>
+    <section class="page-intro">
+      <p class="eyebrow">PROJECT CONCEPT 03 · INTERACTIVE LEARNING</p>
+      <h1>Cybersecurity awareness <em>quiz.</em></h1>
+      <p class="lead">Try five everyday security questions, read the explanations, and see your score at the end.</p>
+    </section>
+    <section id="quiz-card" class="quiz-card" aria-labelledby="quiz-heading">
+      <div class="quiz-heading-row"><div><p class="eyebrow">QUICK KNOWLEDGE CHECK</p><h2 id="quiz-heading">Safer online habits</h2></div><span id="quiz-counter" class="quiz-counter">Question 1 of 5</span></div>
+      <div class="quiz-progress" role="progressbar" aria-label="Quiz progress" aria-valuemin="0" aria-valuemax="5" aria-valuenow="0"><span id="quiz-progress-fill"></span></div>
+      <form id="quiz-form" class="quiz-form">
+        <fieldset id="quiz-options" class="quiz-options"><legend id="quiz-question">Loading question…</legend></fieldset>
+        <p id="quiz-feedback" class="quiz-feedback" aria-live="polite"></p>
+        <button id="quiz-action" class="button" type="submit">Check answer <span aria-hidden="true">↗</span></button>
+      </form>
+      <section id="quiz-result" class="quiz-result" aria-live="polite" hidden>
+        <p class="eyebrow">QUIZ COMPLETE</p><h2 id="quiz-score"></h2><p id="quiz-summary"></p><button id="quiz-restart" class="button" type="button">Try again <span aria-hidden="true">↻</span></button>
+      </section>
+    </section>
+    <p class="quiz-note">This is a learning activity, not a security certification. Keep practising and check important security advice with trusted sources.</p>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-row"><span>© <span data-year></span> Gift Moses Ofem · MIVA Open University</span><span>Made with care while learning the web.</span></div></footer>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A calm first-steps guide for a suspected account compromise by Gift Moses Ofem.">
+  <title>Account Incident Response Guide | Gift Moses Ofem</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <script src="incident-guide.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><img class="brand-mark" src="assets/gift-moses-portrait.jpeg" alt=""><span>Gift Moses Ofem<small>Student portfolio</small></span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About</a><a aria-current="page" href="projects.html">Projects</a><a href="planner.html">Planner</a><a href="contact.html">Contact</a></nav>
+  </header>
+  <main class="wrap page-main incident-page">
+    <a class="back-link" href="projects.html">← Back to projects</a>
+    <section class="page-intro">
+      <p class="eyebrow">PROJECT CONCEPT 05 · INCIDENT RESPONSE</p>
+      <h1>Account incident <em>guide.</em></h1>
+      <p class="lead">A calm first-steps checklist for when you think an online account may have been accessed by someone else.</p>
+    </section>
+    <div class="incident-notice"><strong>Start safely:</strong> If you suspect your device is compromised, use a trusted device to secure the account. For financial accounts, contact your bank through its official app or phone number.</div>
+    <section class="incident-layout">
+      <div class="incident-card">
+        <div class="incident-progress-head"><div><p class="eyebrow">FIRST RESPONSE</p><h2>Secure, recover, review.</h2></div><span id="incident-count" class="incident-count">0 / 6</span></div>
+        <div class="incident-progress" role="progressbar" aria-label="Response checklist progress" aria-valuemin="0" aria-valuemax="6" aria-valuenow="0"><span id="incident-progress-fill"></span></div>
+        <p id="incident-status" class="incident-status" aria-live="polite">Check off the steps you’ve completed. Your progress is only kept while this page is open.</p>
+        <ol class="response-steps">
+          <li><label><input type="checkbox"><span><strong>Secure your email account first</strong><small>Email often controls password resets. Change its password from a trusted device if you can.</small></span></label></li>
+          <li><label><input type="checkbox"><span><strong>Change the affected account password</strong><small>Choose a new, unique password that you haven’t used on other accounts.</small></span></label></li>
+          <li><label><input type="checkbox"><span><strong>Sign out unknown sessions</strong><small>Use the service’s security settings to review devices and end sessions you don’t recognize.</small></span></label></li>
+          <li><label><input type="checkbox"><span><strong>Turn on two-step verification</strong><small>Enable an extra sign-in check where it is available.</small></span></label></li>
+          <li><label><input type="checkbox"><span><strong>Contact official support</strong><small>Use the service’s website or app that you reach yourself, not contact details in a suspicious message.</small></span></label></li>
+          <li><label><input type="checkbox"><span><strong>Save evidence and check other accounts</strong><small>Keep relevant alerts or screenshots, then review accounts that reused the old password.</small></span></label></li>
+        </ol>
+        <button id="incident-reset" class="clear-button" type="button">Clear completed steps</button>
+      </div>
+      <aside class="incident-aside"><p class="eyebrow">KEEP A CLEAR HEAD</p><h2>Small steps can help regain control.</h2><p>Use the official recovery instructions for the affected service. If you see unauthorized financial activity, contact your bank or payment provider directly through a trusted channel.</p><div class="mini-tip"><span aria-hidden="true">✳</span><p>Never share your password or one-time verification codes with someone who contacts you unexpectedly.</p></div><a class="text-link" href="projects.html">Explore more cybersecurity projects ↗</a></aside>
+    </section>
+    <p class="incident-note">This is an educational checklist, not a substitute for the affected service’s official recovery process or professional incident-response support.</p>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-row"><span>© <span data-year></span> Gift Moses Ofem · MIVA Open University</span><span>Made with care while learning the web.</span></div></footer>
+</body>
+</html>

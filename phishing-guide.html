@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An interactive guide to spotting phishing warning signs by Gift Moses Ofem.">
+  <title>Phishing Awareness Guide | Gift Moses Ofem</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <script src="phishing-guide.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><img class="brand-mark" src="assets/gift-moses-portrait.jpeg" alt=""><span>Gift Moses Ofem<small>Student portfolio</small></span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About</a><a aria-current="page" href="projects.html">Projects</a><a href="planner.html">Planner</a><a href="contact.html">Contact</a></nav>
+  </header>
+  <main class="wrap page-main phishing-page">
+    <a class="back-link" href="projects.html">← Back to projects</a>
+    <section class="page-intro">
+      <p class="eyebrow">PROJECT CONCEPT 02 · SECURITY AWARENESS</p>
+      <h1>Phishing awareness <em>guide.</em></h1>
+      <p class="lead">Practise noticing common warning signs in a fictional message before you click, reply, or share information.</p>
+    </section>
+    <section class="phishing-layout">
+      <article class="email-demo" aria-labelledby="email-demo-title">
+        <div class="email-topline"><span class="email-dot"></span><span class="email-dot"></span><span class="email-dot"></span><span class="email-window-label">FICTIONAL MESSAGE EXAMPLE</span></div>
+        <div class="email-content">
+          <p class="eyebrow">SAMPLE INBOX</p>
+          <h2 id="email-demo-title">Action required: account review</h2>
+          <dl class="email-meta"><div><dt>From</dt><dd>Account Team &lt;account-support@signin-alert.example&gt;</dd></div><div><dt>To</dt><dd>Student</dd></div><div><dt>Subject</dt><dd>Action required within 24 hours</dd></div></dl>
+          <div class="email-message"><p>Hello valued user,</p><p>We noticed an issue with your account. Your access may be paused today. Confirm your details now to keep using your account.</p><span class="fake-link" aria-label="Illustrative link; not clickable">Review your account</span><p>Thank you,<br>Account Team</p></div>
+          <p class="fiction-note">This is a made-up example. The sample link is not clickable.</p>
+        </div>
+      </article>
+      <aside class="phishing-aside">
+        <p class="eyebrow">YOUR TURN</p>
+        <h2>What feels unusual?</h2>
+        <p>Take a moment to inspect the sender, wording, and request. Then reveal the clues.</p>
+        <button id="reveal-clues" class="button" type="button" aria-expanded="false" aria-controls="clue-panel">Reveal the clues <span aria-hidden="true">↗</span></button>
+        <div id="clue-panel" class="clue-panel" hidden>
+          <h3>Warning signs in this example</h3>
+          <ul>
+            <li><strong>Unfamiliar sender domain:</strong> the address doesn’t clearly match a known organization.</li>
+            <li><strong>Pressure to act quickly:</strong> the message uses a short deadline to rush a decision.</li>
+            <li><strong>Generic greeting:</strong> “Hello valued user” doesn’t identify the recipient.</li>
+            <li><strong>Asks you to confirm details:</strong> don’t share passwords or sensitive information through an unexpected message.</li>
+            <li><strong>Unexpected link:</strong> verify through the organization’s official app or a website address you type yourself.</li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+    <section class="phishing-reminder"><span aria-hidden="true">✳</span><p>If you’re unsure, don’t use the message’s link or reply address. Contact the organization through a trusted channel.</p></section>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-row"><span>© <span data-year></span> Gift Moses Ofem · MIVA Open University</span><span>Made with care while learning the web.</span></div></footer>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A private, browser-only personal data privacy checklist by Gift Moses Ofem.">
+  <title>Personal Data Privacy Checklist | Gift Moses Ofem</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <script src="privacy-checklist.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><img class="brand-mark" src="assets/gift-moses-portrait.jpeg" alt=""><span>Gift Moses Ofem<small>Student portfolio</small></span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About</a><a aria-current="page" href="projects.html">Projects</a><a href="planner.html">Planner</a><a href="contact.html">Contact</a></nav>
+  </header>
+  <main class="wrap page-main privacy-page">
+    <a class="back-link" href="projects.html">← Back to projects</a>
+    <section class="page-intro">
+      <p class="eyebrow">PROJECT CONCEPT 04 · PRIVACY</p>
+      <h1>Personal data privacy <em>checklist.</em></h1>
+      <p class="lead">A small reminder list for reviewing what your accounts, apps, and devices share.</p>
+    </section>
+    <section class="privacy-layout">
+      <div class="privacy-check-card">
+        <div class="privacy-progress-head"><div><p class="eyebrow">YOUR REVIEW</p><h2>Take it one setting at a time.</h2></div><span id="privacy-count" class="privacy-count">0 / 8</span></div>
+        <div class="privacy-progress" role="progressbar" aria-label="Checklist progress" aria-valuemin="0" aria-valuemax="8" aria-valuenow="0"><span id="privacy-progress-fill"></span></div>
+        <p id="privacy-status" class="privacy-status" aria-live="polite">Nothing is checked yet. Choose any items you want to review.</p>
+        <div class="privacy-group"><h3>Accounts</h3>
+          <label class="privacy-item"><input type="checkbox"><span><strong>Review privacy settings</strong><small>Check who can see your profile, posts, and personal details.</small></span></label>
+          <label class="privacy-item"><input type="checkbox"><span><strong>Use two-step verification</strong><small>Enable it on important accounts where it is available.</small></span></label>
+          <label class="privacy-item"><input type="checkbox"><span><strong>Check recovery options</strong><small>Make sure recovery email addresses and phone numbers are current.</small></span></label>
+        </div>
+        <div class="privacy-group"><h3>Apps and devices</h3>
+          <label class="privacy-item"><input type="checkbox"><span><strong>Review app permissions</strong><small>Remove access an app no longer needs, such as location or contacts.</small></span></label>
+          <label class="privacy-item"><input type="checkbox"><span><strong>Check active sessions</strong><small>Sign out devices you no longer use or recognize.</small></span></label>
+          <label class="privacy-item"><input type="checkbox"><span><strong>Review location sharing</strong><small>Check which apps and people can see your location.</small></span></label>
+        </div>
+        <div class="privacy-group"><h3>Personal information</h3>
+          <label class="privacy-item"><input type="checkbox"><span><strong>Look over public profile details</strong><small>Remove information you do not need to share publicly.</small></span></label>
+          <label class="privacy-item"><input type="checkbox"><span><strong>Review backups and sharing</strong><small>Check where important files are backed up and who can access shared folders.</small></span></label>
+        </div>
+        <button id="privacy-reset" class="clear-button" type="button">Clear all checks</button>
+      </div>
+      <aside class="privacy-aside"><p class="eyebrow">A PRIVACY-FIRST DEMO</p><h2>Your choices stay with you.</h2><p>This checklist updates only in the open page. It does not save your selections in browser storage or send them anywhere.</p><div class="mini-tip"><span aria-hidden="true">✳</span><p>Settings can differ between services. When in doubt, use the service’s official help or privacy settings.</p></div><a class="text-link" href="projects.html">Explore more cybersecurity projects ↗</a></aside>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-row"><span>© <span data-year></span> Gift Moses Ofem · MIVA Open University</span><span>Made with care while learning the web.</span></div></footer>
+</body>
+</html>
